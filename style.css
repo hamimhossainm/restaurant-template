@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Start */
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  background-color: #39db4a;
+  color: aliceblue;
+  border-radius: 4px;
+  padding-right: 6px;
+}
+
+.menu ul {
+  display: flex;
+  column-gap: 45px;
+  font-size: 18px;
+}
+
+.activeColor {
+  color: #39db4a;
+}
+
+.menuColor {
+  color: black;
+}
+
+.menu ul li a i {
+  color: #39db4a;
+}
+
+.menu ul li a:hover i {
+  transform: translateY(5px);
+  transition: 0.7s ease-in-out;
+}
+
+.s-menu ul {
+  display: flex;
+  gap: 25px;
+}
+
+.s-menu ul li {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart::after {
+  position: absolute;
+  content: "8";
+  color: #eaebea;
+  left: 14px;
+  top: -7px;
+  background-color: #39db4a;
+  border-radius: 100%;
+  font-size: 10px;
+  width: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.s-menu ul li a {
+  color: white;
+  background-color: #39db4a;
+  padding: 5px 40px;
+  border-radius: 50px;
+}
+
+.s-menu ul li a i {
+  color: white;
+  background-color: #39db4a;
+}
+/* Header End */
