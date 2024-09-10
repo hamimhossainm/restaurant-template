@@ -29,3 +29,52 @@ function scrollFunction() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+// Animation left to middle
+ScrollReveal().reveal(".reveal-left", {
+  origin: "left",
+  distance: "100px",
+  duration: 3000,
+  delay: 200,
+  reset: true,
+});
+
+// Animation right to middle
+ScrollReveal().reveal(".reveal-right", {
+  origin: "right",
+  distance: "100px",
+  duration: 3000,
+  delay: 200,
+  reset: true,
+});
+
+// Animation top to middle
+ScrollReveal().reveal(".reveal-top", {
+  origin: "top",
+  distance: "100px",
+  duration: 3000,
+  delay: 200,
+  reset: true,
+});
+
+// Animation bottom to middle
+ScrollReveal().reveal(".reveal-bottom", {
+  origin: "bottom",
+  distance: "100px",
+  duration: 3000,
+  delay: 200,
+  reset: true,
+});
+
+// Mobile Navbar
+const menuButton = document.querySelector(".navUp_menuLine");
+const closeButton = document.querySelector(".close");
+const mobileNavMenu = document.querySelector(".mobile_nav_menu");
+
+menuButton.addEventListener("click", () => {
+  mobileNavMenu.classList.add("show");
+});
+
+closeButton.addEventListener("click", () => {
+  mobileNavMenu.classList.remove("show");
+});

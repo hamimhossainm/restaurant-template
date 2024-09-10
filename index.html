@@ -29,6 +29,29 @@
   <body>
     <!-- Header Start -->
     <header>
+      <div class="mobile_nav">
+        <div class="mobile_nav_container">
+          <div class="navUp">
+            <div class="m_logo"><span>F</span>OODI</div>
+            <div class="navUp_menuLine"><i class="fa-solid fa-bars"></i></div>
+          </div>
+
+          <div class="mobile_nav_menu">
+            <div class="mobile_nav_menu_container">
+              <h2><i class="fa-solid fa-bars"></i> Menu</h2>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <p class="close"><i class="fa-solid fa-xmark"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <nav class="navbar">
         <div class="logo"><span>F</span>OODI</div>
 
@@ -72,7 +95,7 @@
       <!-- Home Section Start -->
       <section class="section-margin" id="home">
         <div class="home_container">
-          <div class="home_container_data">
+          <div class="home_container_data reveal-left">
             <h1>Dive into Delights <br />of Delectable <span>Food</span></h1>
             <p>
               Where Each Plate Weaves a Story of Culinary <br />Mastery and
@@ -86,11 +109,10 @@
             </div>
           </div>
 
-          <div class="home_container_image">
+          <div class="home_container_image reveal-right">
             <div class="home_container_image_data">
               <a href="#menu"
                 >Hot spicy Food <i class="fa-solid fa-pepper-hot"></i
-                ><i class="fa-solid fa-play fa-plays"></i
               ></a>
 
               <div class="image-container">
@@ -101,7 +123,7 @@
                   <div class="home_box_image_container">
                     <img src="/image/noodles.jpg" alt="" />
                   </div>
-                  <div>
+                  <div class="home_box_data_container">
                     <h4>Spicy Noodles</h4>
                     <p>
                       <i class="fa-solid fa-star full"></i>
@@ -117,7 +139,7 @@
                   <div class="home_box_image_container">
                     <img src="/image/salad.jpg" alt="" />
                   </div>
-                  <div>
+                  <div class="home_box_data_container">
                     <h4>Vegeterian Salad</h4>
                     <p>
                       <i class="fa-solid fa-star full"></i>
@@ -137,8 +159,8 @@
       <!-- Home Section End -->
 
       <!-- Menu Section Start -->
-      <section class="section-margin" id="menu">
-        <div class="menu_container">
+      <section class="section-margin hidden" id="menu">
+        <div class="menu_container reveal-top">
           <h4>CUSTOMER FAVORITES</h4>
           <h2>Popular Categories</h2>
           <div class="menu_boxs">
@@ -168,11 +190,11 @@
       <!-- Menu Section End -->
 
       <!-- Favourite-Menu Section Start -->
-      <section class="section-margin">
+      <section class="section-margin hidden">
         <div class="favourite_container">
-          <h4>SPECIAL DISHES</h4>
+          <h4 class="reveal-left">SPECIAL DISHES</h4>
           <div class="favourite_heading">
-            <h2>Standout Dishes <br />From Our Menu</h2>
+            <h2 class="reveal-left">Standout Dishes <br />From Our Menu</h2>
             <div class="favourite_heading_arrow">
               <button class="grayBtn">
                 <i class="fa-solid fa-angle-left leftArrow"></i>
@@ -183,7 +205,7 @@
             </div>
           </div>
           <div class="favourite_boxs">
-            <div class="favourite_box">
+            <div class="favourite_box reveal-bottom">
               <button><i class="fa-solid fa-heart"></i></button>
               <img src="/image/food (1).jpg" alt="" />
               <h3>Fuchka & Velpuri</h3>
@@ -194,7 +216,7 @@
               </div>
             </div>
 
-            <div class="favourite_box">
+            <div class="favourite_box reveal-bottom">
               <button><i class="fa-regular fa-heart"></i></button>
               <img src="/image/food (2).jpg" alt="" />
               <h3>Potato Chips</h3>
@@ -205,7 +227,7 @@
               </div>
             </div>
 
-            <div class="favourite_box">
+            <div class="favourite_box reveal-bottom">
               <button><i class="fa-regular fa-heart"></i></button>
               <img src="/image/food (3).jpg" alt="" />
               <h3>Cookies</h3>
@@ -221,9 +243,9 @@
       <!-- Favourite-Menu Section End -->
 
       <!-- Review Section Start -->
-      <section class="section-margin" id="review">
+      <section class="section-margin hidden" id="review">
         <div class="review_container">
-          <div class="review_container_image image-containers">
+          <div class="review_container_image image-containers reveal-left">
             <img src="/image/customer.png" alt="" />
             <a
               class="name_bubble"
@@ -232,7 +254,7 @@
               >Hamim Hossain</a
             >
           </div>
-          <div class="review_container_data">
+          <div class="review_container_data reveal-right">
             <h4>Testimonials</h4>
             <h2>What Our Customers <br />Say About Us</h2>
             <p>
@@ -265,8 +287,8 @@
       <!-- Review Section End -->
 
       <!-- Service Section Start -->
-      <section class="section-margin" id="service">
-        <div class="service_container">
+      <section class="section-margin hidden" id="service">
+        <div class="service_container reveal-left">
           <div class="service_first_div">
             <h4>Our Story & Services</h4>
             <h2>Our Culinary Journey <br />And Services</h2>
@@ -279,7 +301,7 @@
           </div>
 
           <div class="service_data_boxs">
-            <div class="service_data_box">
+            <div class="service_data_box reveal-bottom">
               <p>
                 <svg
                   width="64"
@@ -306,7 +328,7 @@
                 Delight your guests with our flavors and presentation
               </p>
             </div>
-            <div class="service_data_box">
+            <div class="service_data_box reveal-bottom">
               <p>
                 <svg
                   width="64"
@@ -349,7 +371,7 @@
                 We deliver your order promptly to your door
               </p>
             </div>
-            <div class="service_data_box">
+            <div class="service_data_box reveal-bottom">
               <p>
                 <svg
                   width="64"
@@ -388,7 +410,7 @@
                 Explore menu & order with ease using our Online Ordering
               </p>
             </div>
-            <div class="service_data_box">
+            <div class="service_data_box reveal-bottom">
               <p>
                 <svg
                   width="64"
@@ -421,30 +443,30 @@
       <!-- Service Section End -->
 
       <!-- Contact Section Start -->
-      <section class="section-margin" id="contact">
+      <section class="section-margin hidden" id="contact">
         <div class="contact_container">
-          <div class="contact_container_box">
+          <div class="contact_container_box reveal-left">
             <div class="logo"><span>F</span>OODI</div>
             <p class="m-menu">
               Savor the artistry where <br />every dish is a culinary
               <br />masterpiece
             </p>
           </div>
-          <div class="contact_container_box">
+          <div class="contact_container_box reveal-left">
             <h3>Usefull Links</h3>
             <a class="ulinks" href="#">About Us</a>
             <a class="ulinks" href="#">Events</a>
             <a class="ulinks" href="#">Blogs</a>
             <a class="ulinks" href="#">FAQ</a>
           </div>
-          <div class="contact_container_box">
+          <div class="contact_container_box reveal-right">
             <h3>Main Menu</h3>
             <a class="m-menu" href="#home">Home</a>
             <a class="m-menu" href="#menu">Menus</a>
             <a class="m-menu" href="#review">Review</a>
             <a class="m-menu" href="#service">Service</a>
           </div>
-          <div class="contact_container_box">
+          <div class="contact_container_box reveal-right">
             <h3>Contact Us</h3>
             <p class="m-menu">hamimhossain.inbox@outlook.com</p>
             <p class="m-menu">+8801904486467</p>
@@ -462,7 +484,7 @@
     <!-- Main End -->
 
     <!-- Footer Start -->
-    <footer>
+    <footer class="hidden">
       <div class="footer_container_links">
         <a href="https://www.facebook.com/hamim641h" target="_blank"
           ><i class="fa-brands fa-square-facebook"></i
@@ -479,7 +501,7 @@
       </div>
     </footer>
     <!-- Footer End -->
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/main.js"></script>
   </body>
 </html>
